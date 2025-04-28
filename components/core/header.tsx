@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import LogoIcon from '../../assets/icons/LogoIcon'
+import Image from 'next/image'
 import { AnimatePresence, motion } from 'framer-motion'
 import Button from './button'
 import Burger from '../../assets/icons/Burger'
@@ -36,7 +36,8 @@ function Header() {
 				} flex px-[18px] py-[16px] bg-white items-center h-[80px] z-50 relative`}>
 				<Link href='/'>
 					<div>
-						<LogoIcon className='cursor-pointer' />
+						<Image src="/mocksy-logo.png" alt="MocksyLabs Logo" width={300} height={170} />
+
 					</div>
 				</Link>
 				<div className='flex gap-2 items-center ml-auto'>

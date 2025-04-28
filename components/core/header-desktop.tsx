@@ -1,5 +1,5 @@
 import React, { useState, ReactElement, useEffect } from 'react'
-import LogoIcon from '../../assets/icons/LogoIcon'
+import Image from 'next/image'
 import { AnimatePresence, motion } from 'framer-motion'
 import Button from './button'
 import { NavbarTab } from '../nav-dropdown'
@@ -85,7 +85,8 @@ function HeaderDesktop() {
 					} select-none flex mosafe-section py-[16px] items-center justify-between h-[80px]`}>
 					<Link href='/'>
 						<div>
-							<LogoIcon className='cursor-pointer' />
+							<Image src="/mocksy-logo.png" alt="MocksyLabs Logo" width={300} height={170} />
+
 						</div>
 					</Link>
 
